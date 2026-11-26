@@ -677,3 +677,25 @@ body {
   .ziwei-chart-entry { gap: 0; }
   .ziwei-footer { flex-wrap: wrap; }
 }
+
+/* Reading rhythm and controls shared by the landing and chart pages. */
+.ziwei-home, .ziwei-chart { line-height: 1.6; }
+.ziwei-hero h1, .ziwei-chart h1 { line-height: 1.12; text-wrap: balance; }
+.ziwei-hero p, .ziwei-chart-entry > div > p { max-width: 34em; line-height: 1.8; }
+.ziwei-preview { background: linear-gradient(145deg, var(--bg-1), var(--bg-2)); }
+.ziwei-palaces .ziwei-plate-center { background: radial-gradient(ellipse, var(--bg-1), var(--bg-2)); }
+.ziwei-resources a { border-inline-start: 3px solid var(--ziwei-blue); padding: clamp(16px, 3vw, 28px); }
+.ziwei-chart-results > * { min-width: 0; }
+.ziwei-form-heading { padding-bottom: 12px; border-bottom: 1px solid var(--bdr-med); }
+@media (max-width: 680px) {
+  .ziwei-hero { padding-block: 28px; gap: 22px; }
+  .ziwei-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+  .ziwei-action { justify-content: center; min-height: 46px; }
+  .ziwei-preview { width: min(100%, 22rem); margin-inline: auto; }
+  .ziwei-resources { gap: 10px; }
+  .ziwei-chart-nav { margin-bottom: 16px; }
+  .ziwei-chart-entry { row-gap: 14px; }
+  .ziwei-birth-form :is(select, input:not([type=checkbox])) { min-height: 44px; font-size: 16px; }
+  .ziwei-chart-results { gap: 16px; }
+  .ziwei-footer { gap: 8px 16px; padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+}
