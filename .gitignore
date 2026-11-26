@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.vercel/
+.env*
+!.env.example
+dist/
+*.tsbuildinfo
+.DS_Store
+node_modules
+
+# 静态导出产物
+out/
